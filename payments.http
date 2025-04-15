@@ -1,0 +1,33 @@
+GET http://localhost:5104/payments
+
+
+###
+
+POST http://localhost:5104/payments/
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "amount": 100.00,
+    "paidDate": "2025-04-09"
+}
+
+###
+GET http://localhost:5104/payments/1
+
+###
+GET http://localhost:5104/payments/1/total
+
+###
+DELETE http://localhost:5104/payments/1
+
+
+###
+PUT http://localhost:5104/payments/2
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "amount": 200.00,
+    "paidDate": "2025-04-09"
+}
